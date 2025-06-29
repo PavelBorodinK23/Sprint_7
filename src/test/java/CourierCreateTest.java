@@ -36,6 +36,6 @@ public class CourierCreateTest {
         client.create(courier)
                 .assertThat()
                 .statusCode(409)
-                .body("message", equalTo("Этот логин уже используется"));
+                .body("message", equalTo("Этот логин уже используется. Попробуйте другой."));
     }
 }
