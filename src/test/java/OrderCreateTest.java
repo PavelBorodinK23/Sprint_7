@@ -10,22 +10,23 @@ import static org.hamcrest.Matchers.notNullValue;
 public class OrderCreateTest {
     private OrderMethod order = new OrderMethod();
 
-    @Parameterized.Parameter()
+    @Parameterized.Parameter
     public String[] color;
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Цвета самоката: {0}")
     public static Object[][] data() {
         return new Object[][]{
                 {new String[]{"BLACK"}},
                 {new String[]{"GREY"}},
-                {new String[]{"BLACK","GREY"}},
+                {new String[]{"BLACK", "GREY"}},
                 {new String[]{}}
         };
     }
 
     @Test
     public void orderCreateTest() {
-        Order info = new Order("Name","Last","address","metro","phone",5,"2025-06-06","comment",color);
+        Order info = new Order("Name", "Last", "address", "metro", "phone",
+                5, "2025-06-06", "comment", color);
         order.create(info)
                 .assertThat()
                 .statusCode(201)

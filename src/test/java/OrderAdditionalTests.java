@@ -1,8 +1,8 @@
 package order;
 
-import Courier.Courier;
-import Courier.CourierGenerator;
-import Courier.CourierMethod;
+import courier.Courier;
+import courier.CourierGenerator;
+import courier.CourierMethod;
 import io.restassured.response.ValidatableResponse;
 import org.junit.After;
 import org.junit.Test;

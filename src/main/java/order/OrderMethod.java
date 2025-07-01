@@ -1,6 +1,6 @@
 package order;
 
-import Base.BaseMethod;
+import base.BaseMethod;
 import io.restassured.response.ValidatableResponse;
 
 public class OrderMethod extends BaseMethod {

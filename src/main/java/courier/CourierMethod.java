@@ -1,6 +1,6 @@
-package Courier;
+package courier;
 
-import Base.BaseMethod;
+import base.BaseMethod;
 import io.restassured.response.ValidatableResponse;
 
 public class CourierMethod extends BaseMethod {

@@ -1,5 +1,4 @@
-import Courier.*;
-import io.restassured.response.ValidatableResponse;
+import courier.*;
 import org.junit.After;
 import org.junit.Test;
 
